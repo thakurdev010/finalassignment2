@@ -13,7 +13,7 @@ vignette: >
 library(finalassignment2)
 ```
 
-##
+## Detail
 This package provides 5 functions to load, summarize and plot (Fatality Analysis Reporting System) FARS data, with some filtering functions
 
 ## make_filename
