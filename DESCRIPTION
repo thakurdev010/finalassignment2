@@ -1,0 +1,24 @@
+Package: finalassignment2
+Type: Package
+Title: This is final assignment2
+Version: 0.1.0
+Imports: testthat
+Author: Thakur Dev Pandey
+Maintainer: Thakur Dev Pandey <thakurdev009@gmail.com>
+Description: It is the final assignment package of R package course
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Repository: GITHUB
+RoxygenNote: 6.0.1
+Imports:
+    magrittr,
+    dplyr,
+    graphics,
+    maps,
+    readr,
+    tidyr,
+	testthat
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

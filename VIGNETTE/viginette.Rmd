@@ -1,0 +1,65 @@
+---
+title: "finalassignment2"
+author: "Thakur Dev Pandey"
+date: "17 July 2017"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Meaningful description of how to use this package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+library(finalassignment2)
+```
+
+##
+This package provides 5 functions to load, summarize and plot (Fatality Analysis Reporting System) FARS data, with some filtering functions
+
+## make_filename
+
+Produce standardized filnames for one or several years of data:
+
+```{r, fig.show='hold'}
+my_years<-c(2013, 2014, 2015)
+my_filenames <- make_filename(my_years)
+print(my_filenames)
+```
+
+## fars_read
+
+Read one standardized FARS file and store it into a tib data.frame:
+
+```{r, fig.show='hold'}
+my_data_2013 <- fars_read(my_filenames[1])
+str(my_data_2013)
+```
+
+
+## fars_read_years
+
+Read several standardized FARS files in function of years specified in input, and store each file in one element of a list (only MONTH and year columns are preserved):
+
+```{r, fig.show='hold'}
+my_data_all <- fars_read_years(my_years)
+str(my_data_all)
+```
+
+
+## fars_summarize_years
+
+Count the number of accidents for each month of every specified years:
+
+```{r, fig.show='hold'}
+my_summary <- fars_summarize_years(my_years)
+my_summary
+```
+
+
+## fars_map_state
+
+Plot all accidents recorded a specified year in a state as black dots on a map:
+
+```{r, fig.show='hold'}
+fars_map_state(13, 2013)
+```
