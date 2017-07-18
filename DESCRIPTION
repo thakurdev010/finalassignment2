@@ -1,0 +1,21 @@
+Package: finalassignment
+Title: Finalassignment
+Version: 1.0
+Authors@R: person("Thakur Dev Pandey", email = "thakurdev009@gmail.com", role = c("aut", "cre"))
+Description: This package is final assignment of R package course by coursera
+Depends: R (>= 3.4.0)
+Imports:
+    magrittr,
+    dplyr,
+    graphics,
+    maps,
+    readr,
+    tidyr,
+	testthat
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
