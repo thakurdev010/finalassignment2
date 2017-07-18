@@ -20,5 +20,8 @@ Load and print data set
 function that loads and print data set and check if it exist in R directory.
 }
 \examples{
-fars_read("accident_2014.csv.bz2")
+\dontrun{
+fars_read("mydata.csv")
+fars_read("C:\\\\mydata.txt")
+}
 }

@@ -20,5 +20,8 @@ list of accident dataset for selected years
 This function gives list of accident datasets with year.csv.bz2 structure
 }
 \examples{
-fars_read_year(2013)
+\dontrun{
+fars_read_years(2013, 2014, 2015)
+fars_read_years("2013")
+}
 }

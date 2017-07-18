@@ -20,6 +20,8 @@ Accident Data set with year
 This function gives the name of an accident dataset with "accident_year.csv.bz2" structure.
 }
 \examples{
-makefile_name(2013)
-
+\dontrun{
+make_filename(2014)
+make_filename("2018")
+}
 }

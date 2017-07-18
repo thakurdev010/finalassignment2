@@ -22,5 +22,8 @@ Map of accident.
 This function indicates which location is prone to which accident
 }
 \examples{
-fars_map_state(1,2014)
+\dontrun{
+fars_map_state(13, 2013)
+fars_map_state("4", "2015")
+}
 }

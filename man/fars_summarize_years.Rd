@@ -20,5 +20,8 @@ Summary statistics of accident each month of selected year
 Gives summary statistics by year and month
 }
 \examples{
+\dontrun{
+fars_summarize_years(c(2013, 2014, 2015))
 fars_summarize_years("2013")
+}
 }
